@@ -1,0 +1,18 @@
+s=str(input())
+t=' '
+k=0
+i=1
+#st,k,i=('o20b20c12J2W9k8j12P12i5q13D4n1'),(''),0,1
+z=s[0]
+while i<=len(s):
+while i<len(s) and s[i].isdigit():
+k=k*10+int(s[i])
+i+=1
+if k>0:
+t+=z*k
+z=('')
+if i>=len(s): break
+z+=s[i]
+i+=1
+k=0
+print(t)
