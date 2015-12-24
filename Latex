@@ -1,0 +1,39 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{wrapfig}
+\usepackage{setspace}
+\usepackage{multicol}
+\usepackage{multirow}
+\textwidth=400pt
+\textheight=40cm
+\begin{document}
+\clearpage
+\setstretch{0,1}
+\pagestyle{empty}
+\begin{configure}
+\vspace{0ex}
+\includegraphics [width=\linewidth]{ВСТАВКА ИЗОБРАЖЕНИЯ}
+\end{configure}
+\begin{multicols}{2}
+\noindent
+
+{\bf {\LARGE БОЛЬШОЙ}}
+
+{\bf {\LARGE ТЕКСТ}}
+\begin{spacing}{0.6} 
+РАСТОЯНИЕ МЕЖДУ АБЗАЦАМИ
+\end{spacing}
+{\itshape КУРСИВ} Либерзон
+\begin{spacing}{1.5}
+
+\end{spacing}
+ ДВЕ КОЛОНКИ ТЕКСТА 
+
+
+\end{multicols}
+
+
+\end{document}
