@@ -3,22 +3,22 @@ a=[[0 for j in range(m)] for i in range(n)]
 a[1][0],a[2][2]='','' # Ввод мин
 zz=0
 while zz==0:
-r,t=[int(i) for i in input().split()]
-r-=1
-t-=1
-if a[r][t]!='':
-for di in range(-1,+2):
-for dj in range(-1,+2):
-ai=r+di
-aj=t+dj
-if 0<=ai<n and 0<=aj<m and a[ai][aj]=='':
-a[r][t]+= 1
-else:
-print('БУМ')
-z+=1
+ r,t=[int(i) for i in input().split()]
+ r-=1
+ t-=1
+ if a[r][t]!='':
+  for di in range(-1,+2):
+   for dj in range(-1,+2):
+    ai=r+di
+    aj=t+dj
+    if 0<=ai<n and 0<=aj<m and a[ai][aj]=='':
+     a[r][t]+= 1
+ else:
+  print('БУМ')
+  z+=1
 for i in range(n):
-for j in range(m):
-if a[i][j]=='':
-print (0,end='')
-print (a[i][j],end=' ')
+ for j in range(m):
+  if a[i][j]=='':
+   print (0,end='')
+  print (a[i][j],end=' ')
 print()
